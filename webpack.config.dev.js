@@ -8,7 +8,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './src/index.js',
+    './client/index.js',
   ],
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
