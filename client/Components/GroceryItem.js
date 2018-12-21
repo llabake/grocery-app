@@ -25,11 +25,11 @@ export class GroceryItem extends Component {
           </h4>
         </div>
         <form onSubmit={this.togglePurchased}>
-          <button type="submit" className={this.props.item.purchased ? '' : 'button-primary'}>
+          <button type="submit" id='buy' className={this.props.item.purchased ? '' : 'button-primary'}>
             {this.props.item.purchased ? 'Unbuy' : 'Buy'}
           </button>
         </form>
-        <form className='' onSubmit={this.delete}>
+        <form className='' id='del' onSubmit={this.delete}>
           <button type="submit">&times;</button>
         </form>
       </div>

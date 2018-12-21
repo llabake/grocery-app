@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GroceryItem /> it renders correctly 1`] = `
+<div>
+  <div>
+    <h4
+      className="strikethrough"
+    >
+      mock-grocery-one
+    </h4>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <button
+      className=""
+      id="buy"
+      type="submit"
+    >
+      Unbuy
+    </button>
+  </form>
+  <form
+    className=""
+    id="del"
+    onSubmit={[Function]}
+  >
+    <button
+      type="submit"
+    >
+      ×
+    </button>
+  </form>
+</div>
+`;

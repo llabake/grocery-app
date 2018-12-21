@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GroceryListAddItem /> it renders correctly 1`] = `
+<div
+  className="grocery-addItem"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Add Item
+    </button>
+  </form>
+</div>
+`;

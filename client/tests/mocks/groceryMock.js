@@ -17,10 +17,6 @@ export default {
     createdAt: "2018-12-20T18:48:40.918Z",
     __v: 0,
   },
-  // createdAuthor: {
-  //   firstName: 'Sardaunan',
-  //   lastName: 'Happygirl',
-  // },
   createdGroceryWithId: {
     name: 'mock-grocery-one',
     purchased: 'false',
@@ -29,9 +25,4 @@ export default {
     createdAt: "2018-12-20T18:48:40.918Z",
     __v: 0,
   },
-  // authorToBeUpdated: {
-  //   id: 'cory-house',
-  //   firstName: 'author_one-two',
-  //   lastName: 'mock-author-two',
-  // },
 };

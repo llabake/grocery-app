@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GroceryItemList /> renders correctly 1`] = `
+<div>
+  <h1>
+    Grocery List
+  </h1>
+  <div>
+    <Connect(GroceryItem)
+      item={
+        Object {
+          "name": "mock-grocery-one",
+          "purchased": "false",
+        }
+      }
+      key="item + undefined"
+    />
+    <Connect(GroceryItem)
+      item={
+        Object {
+          "name": "mock-grocery-two",
+          "purchased": "true",
+        }
+      }
+      key="item + undefined"
+    />
+  </div>
+  <Connect(GroceryListAddItem) />
+</div>
+`;

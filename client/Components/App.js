@@ -5,7 +5,7 @@ import GroceryItemList from "./GroceryItemList";
 import '../styles.css';
 
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div>
