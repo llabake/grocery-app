@@ -35,7 +35,7 @@ export const addGrocery = groceryData => async (dispatch) => {
     const { data: { grocery } } = response;
     dispatch(addGroceryItem(grocery));
   } catch (e) {
-    console.log(e, 'pliesss')
+    throw (e);
   }
 };
 
@@ -45,7 +45,7 @@ export const loadGroceryItems = () => async (dispatch) => {
     const { data: { groceries } } = response;
     dispatch(loadItems(groceries))
   } catch (e) {
-    console.log(e, 'okokoko')
+    throw (e);
   }
 };
 
@@ -56,7 +56,7 @@ export const updateGroceryItem = item => async (dispatch) => {
     const { data: { grocery } } = response;
     dispatch(updateItem(grocery))
   } catch (e) {
-    console.log(e, 'okokoko')
+    throw (e);
   }
 };
 
@@ -66,7 +66,6 @@ export const deleteGroceryItem = item => async (dispatch) => {
     const { data: { message } } = response;
     dispatch(deleteItem(item))
   } catch (e) {
-    console.log(e, 'okokoko')
+    throw (e);
   }
-
 };

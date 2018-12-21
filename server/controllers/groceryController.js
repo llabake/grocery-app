@@ -17,7 +17,6 @@ class GroceryController {
 
   static async addGrocery(req, res) {
     try {
-      console.log(req.body, 'what is being sent');
       const grocery = new GroceryItem(req.body);
       await grocery.save();
       return res.status(201).json({

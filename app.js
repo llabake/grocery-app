@@ -26,6 +26,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'))
 });
 
-app.listen(PORT, () => console.log(`LISTENING ON PORT ${PORT}`));
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => console.log(`LISTENING ON PORT ${PORT}`));
+}
 
 export default app;

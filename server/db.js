@@ -26,17 +26,4 @@ if (config.use_env_variable) {
   });
 }
 
-// mongoose.connect(DATABASE_URL, { useNewUrlParser: true }, () => {
-//
-//   if (process.env.NODE_ENV !== 'production') {
-//     items.forEach(item => {
-//       GroceryItem.find({name: item.name}, (error, items) => {
-//         if(!error && !items.length) {
-//           GroceryItem.create(item);
-//         }
-//       });
-//     });
-//   }
-// });
-
 export default mongoose;
