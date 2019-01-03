@@ -32,7 +32,7 @@ export class GroceryListAddItem extends Component {
             value={this.state.item.name}
             onChange={this.handleInputChange}
           />
-          <button type="submit">Add Item</button>
+          <button  className='add-item' type="submit">Add Item</button>
         </form>
       </div>
     );

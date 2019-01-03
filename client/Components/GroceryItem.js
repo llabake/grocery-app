@@ -18,19 +18,19 @@ export class GroceryItem extends Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className='container'>
+        <div className='item'>
           <h4 className={this.props.item.purchased ? 'strikethrough' : ''}>
             {this.props.item.name}
           </h4>
         </div>
-        <form onSubmit={this.togglePurchased}>
-          <button type="submit" id='buy' className={this.props.item.purchased ? '' : 'button-primary'}>
+        <form className='status' onSubmit={this.togglePurchased}>
+          <button type="submit" id='buy' className={this.props.item.purchased ? 'buy' : 'button-primary bought'}>
             {this.props.item.purchased ? 'Unbuy' : 'Buy'}
           </button>
         </form>
-        <form className='' id='del' onSubmit={this.delete}>
-          <button type="submit">&times;</button>
+        <form  id='del' onSubmit={this.delete}>
+          <button className='delete-btn' type="submit">&times;</button>
         </form>
       </div>
     );
