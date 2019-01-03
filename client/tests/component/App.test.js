@@ -13,7 +13,7 @@ describe('<App /> component', () => {
     const props = {
       items: groceryMock.createdGroceryWithId,
     };
-    const tree = shallow(<App {...props}/>);
+    const tree = shallow(<App {...props} />);
     expect(tree.find(GroceryItemList).length).toBe(1);
   });
 });

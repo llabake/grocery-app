@@ -13,7 +13,7 @@ export class GroceryListAddItem extends Component {
   handleInputChange = (event) => {
     this.setState({
       item: { name: event.target.value },
-    })
+    });
   };
 
   handleAddItem = (event) => {
@@ -21,18 +21,18 @@ export class GroceryListAddItem extends Component {
     this.props.addGrocery(this.state.item)
       .then(() => this.setState(
         { item: { name: '' } },
-      ))
+      ));
   };
 
   render() {
     return (
-      <div className='grocery-addItem'>
+      <div className="grocery-addItem">
         <form onSubmit={this.handleAddItem}>
           <input
             value={this.state.item.name}
             onChange={this.handleInputChange}
           />
-          <button  className='add-item' type="submit">Add Item</button>
+          <button className="add-item" type="submit">Add Item</button>
         </form>
       </div>
     );
@@ -43,4 +43,4 @@ export const mapDispatchToProps = dispatch => ({
   addGrocery: grocery => dispatch(addGrocery(grocery)),
 });
 
-export default connect(null, mapDispatchToProps)(GroceryListAddItem)
+export default connect(null, mapDispatchToProps)(GroceryListAddItem);

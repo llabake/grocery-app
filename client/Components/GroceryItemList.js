@@ -5,7 +5,7 @@ import GroceryItem from "./GroceryItem";
 
 const GroceryItemList = ({ items }) => (
   <div>
-    <h1 className='title' >Grocery List</h1>
+    <h1 className='title'>Grocery List</h1>
     <div>
       {
         items.map(item => (
