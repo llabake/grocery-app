@@ -5518,10 +5518,10 @@ jest@^23.6.0:
     import-local "^1.0.0"
     jest-cli "^23.6.0"
 
-jquery@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.3.tgz#45e07e4190334de36c9e1a64b43b1f1373d91758"
-  integrity sha1-ReB+QZAzTeNsnhpktDsfE3PZF1g=
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
 
 js-base64@^2.1.8:
   version "2.4.9"
