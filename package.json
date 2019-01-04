@@ -65,17 +65,18 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-2": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
     "@babel/runtime": "^7.2.0",
     "axios": "^0.18.0",
-    "babel-polyfill": "6.8.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "6.8.0",
     "cors": "^2.8.5",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "express": "4.13.4",
     "jquery": "2.2.3",
     "mongoose": "^5.4.0",
+    "nyc": "^13.1.0",
     "path": "^0.12.7",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
@@ -88,8 +89,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "2.0.1",
     "toastr": "2.1.2",
-    "webpack-merge": "^4.1.4",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "scripts": {
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --colors --open",
@@ -97,7 +98,7 @@
     "build": "webpack --config webpack.config.prod.js",
     "heroku-postbuild": "npm run build",
     "lint": "eslint  \"client/**/*.{js,jsx}\" --quiet",
-    "test:server": "export NODE_ENV=test && mocha server/tests/*.test.js --timeout 10000 --compilers js:@babel/register",
+    "test:server": "export NODE_ENV=test && nyc --reporter=html --reporter=text mocha server/tests/*.test.js --timeout 10000 --exit --compilers js:@babel/register",
     "test:client": "jest -u --coverage"
   },
   "jest": {

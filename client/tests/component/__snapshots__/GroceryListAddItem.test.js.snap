@@ -12,6 +12,7 @@ exports[`<GroceryListAddItem /> it renders correctly 1`] = `
       value=""
     />
     <button
+      className="add-item"
       type="submit"
     >
       Add Item

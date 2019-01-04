@@ -17,7 +17,7 @@ const config = {
     database: process.env.DATABASE_URL_TEST,
   },
   production: {
-    use_env_variable: 'MONGODB_URI'
+    use_env_variable: 'MONGODB_URI',
   },
 };
 

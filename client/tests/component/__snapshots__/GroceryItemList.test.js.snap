@@ -2,7 +2,9 @@
 
 exports[`<GroceryItemList /> renders correctly 1`] = `
 <div>
-  <h1>
+  <h1
+    className="title"
+  >
     Grocery List
   </h1>
   <div>

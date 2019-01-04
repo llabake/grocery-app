@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GroceryItem /> it renders correctly 1`] = `
-<div>
-  <div>
+<div
+  className="container"
+>
+  <div
+    className="item"
+  >
     <h4
       className="strikethrough"
     >
@@ -10,10 +14,11 @@ exports[`<GroceryItem /> it renders correctly 1`] = `
     </h4>
   </div>
   <form
+    className="status"
     onSubmit={[Function]}
   >
     <button
-      className=""
+      className="buy"
       id="buy"
       type="submit"
     >
@@ -21,11 +26,11 @@ exports[`<GroceryItem /> it renders correctly 1`] = `
     </button>
   </form>
   <form
-    className=""
     id="del"
     onSubmit={[Function]}
   >
     <button
+      className="delete-btn"
       type="submit"
     >
       ×
